@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+
+:root {
+  --bg:             #000000;
+  --bg-raised:      #0a0a0a;
+  --bg-overlay:     #121212;
+
+  /* Cores de Status Ultra-Vibrantes */
+  --shutdown:       #ff0000; 
+  --attack:         #ffaa00; 
+  --censorship:     #ff5500; 
+  --normal:         #00ff66;
+  --throttling:     #aa00ff;
+  --technical:      #0088ff;
+
+  --text-primary:   #ffffff;
+  --text-secondary: #e0e0e0;
+  --text-muted:     #666666;
+
+  --border:         rgba(255, 255, 255, 0.1);
+}
+
+@theme {
+  --color-shutdown: var(--shutdown);
+  --color-attack: var(--attack);
+  --color-censorship: var(--censorship);
+  --color-normal: var(--normal);
+  --color-throttling: var(--throttling);
+  --color-technical: var(--technical);
+  
+  --color-shutdown-bg: rgba(255, 0, 0, 0.15);
+  --color-attack-bg: rgba(255, 170, 0, 0.15);
+  --color-censorship-bg: rgba(255, 85, 0, 0.15);
+  --color-normal-bg: rgba(0, 255, 102, 0.15);
+}
+
+html, body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-mono), monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitários de Brilho Real */
+.glow-shutdown { box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); border-color: rgba(255, 0, 0, 0.6); }
+.glow-attack { box-shadow: 0 0 20px rgba(255, 170, 0, 0.4); border-color: rgba(255, 170, 0, 0.6); }
+.glow-censorship { box-shadow: 0 0 20px rgba(255, 85, 0, 0.4); border-color: rgba(255, 85, 0, 0.6); }
+.glow-normal { box-shadow: 0 0 20px rgba(0, 255, 102, 0.2); border-color: rgba(0, 255, 102, 0.4); }
+
+.text-glow-shutdown { text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+.text-glow-normal { text-shadow: 0 0 10px rgba(0, 255, 102, 0.8); }
+
+.animate-pulse-fast {
+  animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

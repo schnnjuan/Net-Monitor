@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background - Solid black with slightly more rounded corners for better small-scale definition -->
+  <rect width="100" height="100" rx="15" fill="#000"/>
+
+  <!-- Globe outer ring - Thicker (6px) for visibility at small sizes -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#f0f0f0" stroke-width="6"/>
+
+  <!-- Main Axes only - Thicker and higher opacity -->
+  <line x1="12" y1="50" x2="88" y2="50" stroke="#f0f0f0" stroke-width="4" opacity="0.4"/>
+  <line x1="50" y1="12" x2="50" y2="88" stroke="#f0f0f0" stroke-width="4" opacity="0.4"/>
+
+  <!-- Central Pulse - Simplified and bold -->
+  <!-- Outer glow ring -->
+  <circle cx="50" cy="50" r="22" fill="none" stroke="#ff3333" stroke-width="4" opacity="0.3"/>
+  
+  <!-- Main signal ring -->
+  <circle cx="50" cy="50" r="14" fill="none" stroke="#ff3333" stroke-width="6"/>
+
+  <!-- Center signal core - Solid and slightly larger -->
+  <circle cx="50" cy="50" r="7" fill="#ff3333"/>
+
+  <!-- Bold crosshair ticks - Only 4 main directions, very thick -->
+  <line x1="50" y1="28" x2="50" y2="34" stroke="#ff3333" stroke-width="5" stroke-linecap="round"/>
+  <line x1="50" y1="66" x2="50" y2="72" stroke="#ff3333" stroke-width="5" stroke-linecap="round"/>
+  <line x1="28" y1="50" x2="34" y2="50" stroke="#ff3333" stroke-width="5" stroke-linecap="round"/>
+  <line x1="66" y1="50" x2="72" y2="50" stroke="#ff3333" stroke-width="5" stroke-linecap="round"/>
+</svg>
